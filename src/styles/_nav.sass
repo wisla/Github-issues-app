@@ -1,0 +1,45 @@
+.sidebar
+	flex: 0 0 18%
+	display: flex
+	flex-direction: column
+
+.side-nav
+	font-size: 1.4rem
+	list-style: none
+
+.side-nav__item
+	position: relative
+	&:hover
+		background-color: $navy
+		transition: .4s
+	.active
+		background-color: $navy
+
+.side-nav__link:link, .side-nav__link:visited
+	color: $white
+	text-decoration: none
+	padding: 1.6rem 1.5rem
+	position: relative
+	z-index: 10
+	display: flex
+
+.icon
+	width: 100%
+	&:before
+		padding-right: 1rem
+
+.icon-github:before
+	content: url(../media/icon/icon-github.svg)
+
+.icon-open:before
+	content: url(../media/icon/icon-open-issue.svg)
+
+.icon-closed:before
+	content: url(../media/icon/icon-closed-issue.svg)
+
+strong
+	color: #8a8995
+	font-family: "Proxima Nova"
+	font-size: 14px
+	font-weight: 400
+	letter-spacing: 0.07px

@@ -1,0 +1,37 @@
+.content
+	overflow: hidden
+	background-color: $light
+	flex: 1
+	padding: 0 15px
+
+.icon-svg
+	float: right
+	height: 30px
+
+#star
+	fill: $white
+	stroke: $black
+
+.list
+	list-style: none
+	margin: 1rem 0
+	&__link
+		cursor: pointer
+		display: block
+		margin: 5px 0
+		padding: 5px 10px
+		background-color: $white
+		border: 1px solid $pink
+		border-radius: 5px
+		color: $dark
+		font-size: 15px
+		line-height: 28px
+		letter-spacing: 0.07px
+	&__date
+		font-size: 12px
+		color: $grey
+
+.icon-svg.active
+	#star
+		fill: $black
+		transition: .4s
