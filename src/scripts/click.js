@@ -11,7 +11,9 @@ for (let index = 0; index < navBtn.length; index++) {
 
 for (let index = 0; index < issueBtn.length; index++) {
 	const element = issueBtn[index];
+	
 	element.addEventListener('click', function () {
+		console.log(element);
 		element.classList.toggle("active");
 	});
 }
